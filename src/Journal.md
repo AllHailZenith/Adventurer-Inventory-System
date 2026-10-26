@@ -3,3 +3,6 @@ In this phase, I created the InventoryComponent base class and the Item class. I
 
 Phase 2
 In this phase, I created the Bag class to hold items and other inventory components. An Item returns its own weight, while a Bag adds its base weight to the weights of everything inside it. Polymorphism lets the Bag call getWeight() on any component, and recursion handles nested bags automatically without needing to identify each object's type.
+
+Phase 3
+In this phase, I built a complete inventory with loose items, smaller pouches, and a bag containing another bag. The backpack calculated the combined weight and displayed the entire inventory. I also tested a pouch independently and confirmed that trying to add an item to a sword throws an UnsupportedOperationException. If I added a WeightlessBag, I would create a new class and leave Item and the existing Bag class unchanged. This supports the Open/Closed Principle by allowing new types without modifying working classes.
