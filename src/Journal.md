@@ -6,3 +6,6 @@ In this phase, I created the Bag class to hold items and other inventory compone
 
 Phase 3
 In this phase, I built a complete inventory with loose items, smaller pouches, and a bag containing another bag. The backpack calculated the combined weight and displayed the entire inventory. I also tested a pouch independently and confirmed that trying to add an item to a sword throws an UnsupportedOperationException. If I added a WeightlessBag, I would create a new class and leave Item and the existing Bag class unchanged. This supports the Open/Closed Principle by allowing new types without modifying working classes.
+
+Phase 4
+In this phase, I tested an empty bag and confirmed that its weight was just the base weight. I also removed an item and verified that the total weight decreased correctly. The nested inventory displayed and calculated weights without hardcoded totals. I did not consult an AI tutor, but the tests helped confirm that the Composite pattern and recursive calculations worked as expected.

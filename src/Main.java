@@ -40,6 +40,7 @@ public class Main {
             sword.add(new Item("Dagger", 1.0));
         } catch (UnsupportedOperationException e) {
             System.out.println("Warning: Individual items cannot contain other items.");
+
         }
     }
 }
