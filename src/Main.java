@@ -1,14 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-        Item sword = new Item("Iron Sword", 3.5);
+        Bag pouch = new Bag("Belt Pouch", 0.5);
+
         Item potion = new Item("Health Potion", 0.5);
+        Item scroll = new Item("Magic Scroll", 0.2);
 
-        sword.displayInfo();
-        System.out.println("Sword weight: " + sword.getWeight() + " lbs");
+        pouch.add(potion);
+        pouch.add(scroll);
 
-        System.out.println();
-
-        potion.displayInfo();
-        System.out.println("Potion weight: " + potion.getWeight() + " lbs");
+        pouch.displayInfo();
+        System.out.println("Total pouch weight: " + pouch.getWeight() + " lbs");
     }
 }
