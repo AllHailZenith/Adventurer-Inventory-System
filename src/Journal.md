@@ -1,0 +1,2 @@
+Phase 1
+In this phase, I created the InventoryComponent base class and the Item class. I tested two items and verified that their names and weights displayed correctly. The default methods throw UnsupportedOperationException so subclasses only need to implement operations they support. This makes the design transparent because the client can use the same component type without needing to know which operations are supported by each class.
